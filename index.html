@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4 In A Row</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>
+    <span class="blue">4</span>
+    IN A
+    <span class="red">ROW</span>
+  </h1>
+
+  <!-- PLAYER INPUTS -->
+  <div class="player-inputs">
+    <input type="text" id="player1" placeholder="Player 1" value="Player 1">
+    <input type="text" id="player2" placeholder="Player 2" value="Player 2">
+  </div>
+
+  <!-- SCOREBOARD -->
+  <div id="scoreboard">
+
+    <div class="score-card active" id="card1">
+      <div class="dot blue-bg"></div>
+      <span id="name1">Player 1</span>
+      <h2 id="score1">0</h2>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="score-card" id="card2">
+      <div class="dot red-bg"></div>
+      <span id="name2">Player 2</span>
+      <h2 id="score2">0</h2>
+    </div>
+
+  </div>
+
+  <!-- STATUS -->
+  <div id="status"></div>
+
+  <!-- TIMER -->
+  <div id="timer">
+    Time Left:
+    <span id="time">15</span>s
+  </div>
+
+  <!-- PREVIOUS WINNER -->
+  <div id="previousWinner">
+    Previous Winner: None
+  </div>
+
+  <!-- BOARD -->
+  <div id="board"></div>
+
+  <!-- BUTTON -->
+  <button id="newGame">New Game</button>
+
+  <!-- POPUP -->
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <h2 id="popupText"></h2>
+      <button onclick="closePopup()">
+        Play Again
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
